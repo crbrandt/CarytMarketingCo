@@ -1,5 +1,6 @@
 import streamlit as st
-pip install statsmodels 
+%conda install statsmodels
+%pip install statsmodels
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 from scipy import stats
