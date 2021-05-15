@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 
 st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Optimizer',
-                   page_icon='https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png'
+                   page_icon='https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png',
                    layout="wide")
 
 st.title('Super Bowl Advertisement Optimizer')
