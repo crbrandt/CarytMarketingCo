@@ -5,6 +5,12 @@ import statsmodels.api as sm
 import statsmodels.formula.api as smf
 from scipy import stats
 
+
+st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Optimizer',
+                   page_icon='https://ibb.co/bdmxKgc',
+                   layout="wide")
+
+
 # streamlit run C:\Users\brown\Desktop\MSDS\Capstone\predict.py
 
 model = sm.load('/Users/colebrandt/Documents/Northwestern MSDS/MSDS 498/usa_today_model')
