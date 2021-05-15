@@ -1,4 +1,5 @@
 import streamlit as st
+python -m pip install statsmodels 
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 from scipy import stats
