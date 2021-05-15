@@ -9,9 +9,10 @@ import pandas as pd
 import numpy as np
 
 st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Optimizer',
-                   page_icon='https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png',
+                   page_icon='https://i.ibb.co/d55RjZp/Sunrise-Abstract-Shapes-Logo-Template.png',
                    layout="wide")
-
+#https://i.ibb.co/d55RjZp/Sunrise-Abstract-Shapes-Logo-Template.png
+#https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png
 st.title('Super Bowl Advertisement Optimizer')
 
 st.markdown(' ## Powered by Caryt Marketing Co.')
