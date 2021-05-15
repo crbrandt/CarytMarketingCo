@@ -8,6 +8,10 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Optimizer',
+                   page_icon='https://ibb.co/bdmxKgc',
+                   layout="wide")
+
 st.title('Super Bowl Advertisement Optimizer')
 
 st.markdown(' ## Powered by Caryt Marketing Co.')
