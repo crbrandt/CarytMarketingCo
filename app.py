@@ -115,13 +115,7 @@ if button:
 
 
 if button == false:
-  st.write('\n  
-  \n 
-  \n 
-  \n 
-  \n 
-  \n 
-  ')
+  st.write('\n \n \n \n \n \n')
     
 
 # Bottom Row ------------------------------------------------------------------------
