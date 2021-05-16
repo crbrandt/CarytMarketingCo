@@ -127,5 +127,6 @@ with about:
     Young Jang \n
     Tyrone Brown
     '''
-    st.image("https://i.ibb.co/9qDzx87/Sunrise-Abstract-Shapes-Logo-Template-copy.png",
+    
+st.image("https://i.ibb.co/9qDzx87/Sunrise-Abstract-Shapes-Logo-Template-copy.png",
     width= 100, caption='Caryt Marketing Co.')
