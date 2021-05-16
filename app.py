@@ -112,10 +112,8 @@ if button:
     with col2:
       st.header("**Worst Ad of Cluster: (INSERT AD SCORE)**")
       st.video("https://www.youtube.com/embed/xxNxqveseyI")
-
-
-if button == false:
-  st.write('\n \n \n \n \n \n')
+else:
+    st.write('\n \n \n \n \n \n')
     
 
 # Bottom Row ------------------------------------------------------------------------
