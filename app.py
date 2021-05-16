@@ -113,12 +113,11 @@ if button:
       st.header("**Worst Ad of Cluster: (INSERT AD SCORE)**")
       st.video("https://www.youtube.com/embed/xxNxqveseyI")
 else:
-    st.write('''  \n
-       \n                   
-       \n                
-       \n              
-       \n                   
-    ''')
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
+    st.write("#")
     
 
 # Bottom Row ------------------------------------------------------------------------
