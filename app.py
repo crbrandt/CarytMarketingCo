@@ -7,7 +7,7 @@ from scipy import stats
 
 
 st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Optimizer',
-                   page_icon='https://ibb.co/bdmxKgc',
+                   page_icon='https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png',
                    layout="wide")
 
 
