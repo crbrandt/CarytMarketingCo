@@ -13,7 +13,7 @@ st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Opti
 
 # streamlit run C:\Users\brown\Desktop\MSDS\Capstone\predict.py
 
-model = sm.load('/Users/colebrandt/Documents/Northwestern MSDS/MSDS 498/usa_today_model')
+model = sm.load('./usa_today_model')
 
 model_inputs = {
     'mood_funny':0,
