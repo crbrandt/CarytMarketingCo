@@ -109,3 +109,23 @@ if button:
     st.video("https://www.youtube.com/embed/xxNxqveseyI")
     st.write('**Worst Ad of Cluster: (INSERT AD SCORE)**')
     st.video("https://www.youtube.com/embed/xxNxqveseyI")
+
+    
+    
+
+# Bottom Row ------------------------------------------------------------------------
+st.markdown('___')
+about = st.beta_expander('About/Additional Info')
+with about:
+    '''
+    Thank you for visiting the Super Bowl Advertisement Optimizer, powered by Caryt Marketing Co. For more information, please visit our team's [Github repository] (https://github.com/crbrandt/CarytMarketingCo).
+    
+    Curated by the Caryt Marketing Co. Analytics team:
+    Cole Brandt
+    Anton Averin
+    Ranaa Ansari
+    Young Jang
+    Tyrone Brown
+    '''
+    st.image("https://i.ibb.co/d55RjZp/Sunrise-Abstract-Shapes-Logo-Template.png",
+    width= 100, caption='Caryt Marketing Co.')
