@@ -114,7 +114,7 @@ if button:
       st.video("https://www.youtube.com/embed/xxNxqveseyI")
 
 
-if !button:
+if button == false:
   st.write(' \n
   \n
   \n
