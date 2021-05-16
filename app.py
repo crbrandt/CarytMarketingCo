@@ -122,8 +122,7 @@ else:
     st.write("#")
     st.write("#")
     st.write("#")
-    st.write("#")
-    st.write("#")
+
 
 # Bottom Row ------------------------------------------------------------------------
 st.markdown('___')
