@@ -120,12 +120,12 @@ with about:
     '''
     Thank you for visiting the Super Bowl Advertisement Optimizer, powered by Caryt Marketing Co. For more information, please visit our team's [Github repository] (https://github.com/crbrandt/CarytMarketingCo).
     
-    Curated by the Caryt Marketing Co. Analytics team:
-    Cole Brandt
-    Anton Averin
-    Ranaa Ansari
-    Young Jang
+    Curated by the Caryt Marketing Co. Analytics team: \n
+    Cole Brandt \n
+    Anton Averin \n
+    Ranaa Ansari \n
+    Young Jang \n
     Tyrone Brown
     '''
-    st.image("https://i.ibb.co/d55RjZp/Sunrise-Abstract-Shapes-Logo-Template.png",
+    st.image("https://i.ibb.co/9qDzx87/Sunrise-Abstract-Shapes-Logo-Template-copy.png",
     width= 100, caption='Caryt Marketing Co.')
