@@ -129,4 +129,4 @@ with about:
     '''
     
 st.image("https://i.ibb.co/9qDzx87/Sunrise-Abstract-Shapes-Logo-Template-copy.png",
-    width= 100, caption='Caryt Marketing Co.')
+    width= 100, caption='2021 Caryt Marketing Co.')
