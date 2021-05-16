@@ -105,12 +105,23 @@ if button:
     st.write('Your Predicted Ad Score is {}'.format(result))
     st.write('**Cluster Profile: (INSERT NAME)**')
     st.write('(CLUSTER DESCRIPTION)')
-    st.write('**Best Ad of Cluster: (INSERT AD SCORE)**')
-    st.video("https://www.youtube.com/embed/xxNxqveseyI")
-    st.write('**Worst Ad of Cluster: (INSERT AD SCORE)**')
-    st.video("https://www.youtube.com/embed/xxNxqveseyI")
+    col1, col2 = st.beta_columns(2)
+    with col1:
+      st.header("**Best Ad of Cluster: (INSERT AD SCORE)**")
+      st.video("https://www.youtube.com/embed/xxNxqveseyI")
+    with col2:
+      st.header("**Worst Ad of Cluster: (INSERT AD SCORE)**")
+      st.video("https://www.youtube.com/embed/xxNxqveseyI")
 
-    
+
+if !button:
+  st.write(' \n
+  \n
+  \n
+  \n
+  \n
+  \n
+  ')
     
 
 # Bottom Row ------------------------------------------------------------------------
