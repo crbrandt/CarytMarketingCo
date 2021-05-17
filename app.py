@@ -38,11 +38,14 @@ model_inputs = {
     'industry_loans':0
 }
 
-def predict(industry,moods):
+def predict(industry,moods,celebs):
     model_inputs[industry_map[industry]] = 1
 
     for mood in moods:
         model_inputs[mood_map[mood]] = 1
+        
+    for celeb in celebs:
+        model_inputs[celeb_map[celeb]] = 1
 
     prediction = round(model.predict(model_inputs)[0]*100,2)
     
@@ -68,6 +71,11 @@ mood_map = {
     'Heartwarming':'mood_heartwarming',
     'Informative':'mood_informative',
     'Inspirational':'mood_inspirational'
+    }
+
+celeb_map = {
+    'NFL Players':'n_nfl',
+    'Top Actors':'n_top_actors'
     }
 
 
@@ -98,10 +106,15 @@ moods = st.multiselect(
     [x for x in mood_map.keys()]
     )
 
+celebs = st.multiselect(
+    'Select Celebrities in Your Advertisement',
+    [x for x in celeb_map.keys()]
+    )
+
 button = st.button('Predict')
 
 if button:
-    result = predict(industry,moods)
+    result = predict(industry,moods, celebs)
     st.write('Your Predicted Ad Score is {}'.format(result))
     st.write('**Cluster Profile: (INSERT NAME)**')
     st.write('(CLUSTER DESCRIPTION)')
