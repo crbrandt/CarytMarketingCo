@@ -143,7 +143,7 @@ else:
 
 # Bottom Row ------------------------------------------------------------------------
 st.markdown('___')
-about = st.beta_expander('About/Additional Info')
+about = st.beta_expander('About')
 with about:
     '''
     Thank you for visiting the Super Bowl Advertisement Optimizer, powered by Caryt Marketing Co. For more information, please visit our team's [Github repository] (https://github.com/crbrandt/CarytMarketingCo).
