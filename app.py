@@ -78,7 +78,7 @@ celeb_map = {
     'Top Actors':'n_top_actors'
     }
 
-col_title, col_logo = st.beta_columns(2)
+col_title, col_logo = st.beta_columns([3,1])
 with col_title:
   st.title('Super Bowl Advertisement Optimizer')
   st.markdown(' ## Powered by Caryt Marketing Co.')
