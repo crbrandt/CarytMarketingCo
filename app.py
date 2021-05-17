@@ -78,10 +78,12 @@ celeb_map = {
     'Top Actors':'n_top_actors'
     }
 
-
-st.title('Super Bowl Advertisement Optimizer')
-
-st.markdown(' ## Powered by Caryt Marketing Co.')
+col_title, col_logo = st.beta_columns(2)
+with col_title:
+  st.title('Super Bowl Advertisement Optimizer')
+  st.markdown(' ## Powered by Caryt Marketing Co.')
+with col_logo:
+  st.image("https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png")
 
 
 industry = st.selectbox(
