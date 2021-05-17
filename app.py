@@ -83,7 +83,7 @@ with col_title:
   st.title('Super Bowl Advertisement Optimizer')
   st.markdown(' ## Powered by Caryt Marketing Co.')
 with col_logo:
-  st.image("https://i.ibb.co/9qDzx87/Sunrise-Abstract-Shapes-Logo-Template-copy.png")
+  st.image("https://i.ibb.co/9qDzx87/Sunrise-Abstract-Shapes-Logo-Template-copy.png", height = 200)
 
 
 industry = st.selectbox(
