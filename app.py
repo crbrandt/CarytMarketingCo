@@ -120,10 +120,12 @@ if button:
     st.write('(CLUSTER DESCRIPTION)')
     col1, col2 = st.beta_columns(2)
     with col1:
-      st.header("**Best Ad of Cluster: (INSERT AD SCORE)**")
+      st.header("**Best Ad of Cluster: **")
+      st.markdown('## AD Score: (Insert Here)')
       st.video("https://www.youtube.com/embed/xxNxqveseyI")
     with col2:
-      st.header("**Worst Ad of Cluster: (INSERT AD SCORE)**")
+      st.header("**Worst Ad of Cluster: **")
+      st.markdown('## AD Score: (Insert Here)')
       st.video("https://www.youtube.com/embed/xxNxqveseyI")
 else:
     st.write("#")
