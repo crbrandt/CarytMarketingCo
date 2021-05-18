@@ -117,7 +117,7 @@ button = st.button('Predict')
 
 if button:
     result = predict(industry,moods, celebs)
-    st.write('Your Predicted Ad Score is {}'.format(result))
+    st.write('Your Predicted Ad Score is {}'.format(result) + ' out of 100')
     st.write('**Cluster Profile: (INSERT NAME)**')
     st.write('(CLUSTER DESCRIPTION)')
     col1, col2 = st.beta_columns(2)
