@@ -114,7 +114,7 @@ celebs = st.multiselect(
     )
 
 count_celebs = 0;
-for (i=0; i < celeb_map.length; i++) {
+for (i in celeb_map.length) {
   if (celeb_map[i].selected) count_celebs++;
 }
 
