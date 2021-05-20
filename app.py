@@ -11,7 +11,7 @@ st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Opti
                    layout="wide")
 
 def highlight(text):
-     st.markdown(f'<p style="text-align: center;background-color:#f19e28;color:#fffff;font-size:20px;border-radius:2%;">{text}</p>', unsafe_allow_html=True)
+     st.markdown(f'<p style="text-align: center;color:#f19e28;font-size:20px;border-radius:2%;">{text}</p>', unsafe_allow_html=True)
 
 
 # streamlit run C:\Users\brown\Desktop\MSDS\Capstone\predict.py
