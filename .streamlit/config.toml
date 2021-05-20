@@ -4,3 +4,11 @@ backgroundColor="#ffffff"
 secondaryBackgroundColor="#f7f7f7"
 textColor="#000000"
 font="sans serif"
+
+
+[theme2]
+primaryColor="#f19e28"
+backgroundColor="#ffffff"
+secondaryBackgroundColor="#f7f7f7"
+textColor="#f19e28"
+font="sans serif"
