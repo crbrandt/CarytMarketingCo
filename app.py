@@ -187,7 +187,7 @@ for celeb in celebs:
 #   st.write('TEST')
 
 button = st.button('Predict')
-best_ad_link, worst_ad_link, best_ad_title, worst_ad_title, best_ad_score, worst_ad_score = ''
+best_ad_link = worst_ad_link = best_ad_title = worst_ad_title = best_ad_score = worst_ad_score = ''
 
 cluster_info = st.slider('Cluster Number: ', min_value = 0, max_value = 5)
 
@@ -241,11 +241,11 @@ if button:
     st.write('(CLUSTER DESCRIPTION)')
     col1, col2 = st.beta_columns(2)
     with col1:
-      st.markdown('## Best Ad of Cluster: ')
+      st.markdown(f'## Best Ad of Cluster: {best_ad_title}')
       st.write(f'Ad Score: {best_ad_score}')
       st.video(best_ad_link)
     with col2:
-      st.markdown('## Worst Ad of Cluster: ')
+      st.markdown(f'## Worst Ad of Cluster: {worst_ad_title}')
       st.write(f'Ad Score: {worst_ad_score}')
       st.video(worst_ad_link)
 else:
