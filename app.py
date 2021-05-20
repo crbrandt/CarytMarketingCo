@@ -42,7 +42,8 @@ def predict(industry,moods,celebs):
     model_inputs[industry_map[industry]] = 1
 
     for mood in moods:
-        model_inputs[mood_map[mood]] = 1
+        if mood_map[mood] in model_inputs:
+          model_inputs[mood_map[mood]] = 1
 
     prediction = round(model.predict(model_inputs)[0]*100,2)
     
@@ -63,11 +64,34 @@ industry_map = {
     }
 
 mood_map = {
+    'Adventurous':'mood_adventurous',
+    'Alluring':'mood_alluring',
+    'Boring':'mood_boring',
+    'Controversial':'mood_controversial'
+    'Cute/Adorable':'mood_cute\adorable',
+    'Dramatic':'mood_dramatic',
     'Emotional':'mood_emotional',
+    'Exciting':'mood_exciting',
+    'Flirty':'mood_flirty'
     'Funny':'mood_funny',
+    'Goofy':'mood_goofy',
+    'Gross':'mood_gross',
     'Heartwarming':'mood_heartwarming',
     'Informative':'mood_informative',
     'Inspirational':'mood_inspirational'
+    'Light-hearted':'mood_light hearted',
+    'Mysterious':'mood_mysterious',
+    'Party-themed':'mood_party themed',
+    'Patriotic':'mood_patriotic',
+    'Romantic':'mood_romantic',
+    'Scary':'mood_scary',
+    'Serious':'mood_serious',
+    'Sexy':'mood_sexy',
+    'Shocking':'mood_shocking',
+    'Somber':'mood_somber',
+    'Suspenseful':'mood_suspenseful',
+    'Unique':'mood_unique',
+    'Weird':'mood_weird'
     }
 
 celeb_map = {
