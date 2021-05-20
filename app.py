@@ -187,8 +187,7 @@ for celeb in celebs:
 #   st.write('TEST')
 
 button = st.button('Predict')
-best_ad_link = ''
-worst_ad_linl = ''
+best_ad_link, worst_ad_link, best_ad_title, worst_ad_title, best_ad_score, worst_ad_score = ''
 
 cluster_info = st.slider('Cluster Number: ', min_value = 0, max_value = 5)
 
@@ -197,31 +196,43 @@ if button:
     result = predict(industry,moods, celeb_sliders)
     st.write('Your Predicted Ad Score is {}'.format(result) + ' out of 100')
     if cluster_info == 0:
+      best_ad_title = 'Budweiser - Lost Dog'
+      worst_ad_title = 'Donald Trump - Criminal Justice Reform'
       best_ad_link = 'https://www.youtube.com/watch?v=TPKgC8KPBMg'
       worst_ad_link = 'https://www.youtube.com/watch?v=Xtv_PJE8xns'
       best_ad_score = '81 out of 100'
       worst_ad_score = '33 out of 100'
     if cluster_info == 1:
+      best_ad_title = 'Amazon Alexa - Not Everything Makes the Cut'
+      worst_ad_title = 'Discover Card - Yes we\'re Accepted'
       best_ad_link = 'https://www.youtube.com/watch?v=e7iSdU7cuCA'
       worst_ad_link = 'https://www.youtube.com/watch?v=c_eamwX_lZk'
       best_ad_score = '73 out of 100'
       worst_ad_score = '45 out of 100'
     if cluster_info == 2:
+      best_ad_title = 'NFL - The 100-Year Game'
+      worst_ad_title = 'NFL - Next 100'
       best_ad_link = 'https://www.youtube.com/watch?v=tJjiIuH1VnY'
       worst_ad_link = 'https://www.youtube.com/watch?v=lbkafMhmvMo'
       best_ad_score = '77 out of 100'
       worst_ad_score = '66 out of 100'
     if cluster_info == 3:
+      best_ad_title = 'Kia Niro - Hero\'s Journey'
+      worst_ad_title = 'Squarespace - Real Talk'
       best_ad_link = 'https://www.youtube.com/watch?v=pVxmT2x3Od4'
       worst_ad_link = 'https://www.youtube.com/watch?v=8iWt3DJIDa0'
       best_ad_score = '77 out of 100'
       worst_ad_score = '36 out of 100'
     if cluster_info == 4:
+      best_ad_title = 'Rocket Mortgage - Certain Is Better'
+      worst_ad_title = 'Mobile Strike - Arnold\'s Fight'
       best_ad_link = 'https://www.youtube.com/watch?v=EMgA-y2nRWE'
       worst_ad_link = 'https://www.youtube.com/watch?v=fF0ZmIf7H9k'
       best_ad_score = '74 out of 100'
       worst_ad_score = '40 out of 100'
     if cluster_info == 5:
+      best_ad_title = 'Amazon Alexa - Alexa Loses Her Voice'
+      worst_ad_title = 'Jublia - Best Kept Secret'
       best_ad_link = 'https://www.youtube.com/watch?v=iNxvsxU2rJE'
       worst_ad_link = 'https://www.youtube.com/watch?v=AXCCmCwzRPs'
       best_ad_score = '72 out of 100'
@@ -230,11 +241,11 @@ if button:
     st.write('(CLUSTER DESCRIPTION)')
     col1, col2 = st.beta_columns(2)
     with col1:
-      st.markdown("## Best Ad of Cluster: ")
+      st.markdown(f"## Best Ad of Cluster: {best_ad_title}")
       st.write(f'AD Score: {best_ad_score}')
       st.video(best_ad_link)
     with col2:
-      st.markdown("## Worst Ad of Cluster: ")
+      st.markdown(f"## Worst Ad of Cluster: {worst_ad_title}")
       st.write(f'AD Score: {worst_ad_score}')
       st.video(worst_ad_link)
 else:
