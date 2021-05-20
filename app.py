@@ -190,7 +190,7 @@ button = st.button('Predict')
 best_ad_link = ''
 worst_ad_linl = ''
 
-cluster_info = st.slider('Cluster Number: ' min_value = 0, max_value = 5)
+cluster_info = st.slider('Cluster Number: ', min_value = 0, max_value = 5)
 
 if button:
     st.write('Model inputs: ' + str(model_inputs))
