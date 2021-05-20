@@ -115,7 +115,7 @@ celebs = st.multiselect(
 
 count_celebs = 0;
 
-for count, value in enumerate(celeb_map):
+for count, value in enumerate(celebs):
   count_celebs = count
 
 
