@@ -112,7 +112,7 @@ celebs = st.multiselect(
 
 celeb_sliders = []
 for celeb in celebs:
-    celeb_slider = st.sidebar.slider(f'Number of {celeb}: ' , min_value=1, max_value=10)
+    celeb_slider = st.slider(f'Number of {celeb}: ' , min_value=1, max_value=10)
     model_inputs[celeb_map[celeb]] = celeb_slider
     
     
