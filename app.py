@@ -68,7 +68,7 @@ mood_map = {
     'Alluring':'mood_alluring',
     'Boring':'mood_boring',
     'Controversial':'mood_controversial'
-    'Cute/Adorable':'mood_cute\adorable',
+    'Cute\Adorable':'mood_cute\adorable',
     'Dramatic':'mood_dramatic',
     'Emotional':'mood_emotional',
     'Exciting':'mood_exciting',
