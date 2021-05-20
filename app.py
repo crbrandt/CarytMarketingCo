@@ -197,7 +197,7 @@ cluster_info = st.slider('Cluster Number: ', min_value = 0, max_value = 5)
 if button:
     st.write('Model inputs: ' + str(model_inputs))
     result = predict(industry,moods, celeb_sliders)
-    #st.markdown(highlight(('Your Predicted Ad Score is {}'.format(result) + ' out of 100')))
+    highlight(('Your Predicted Ad Score is {}'.format(result) + ' out of 100'))
     if cluster_info == 0:
       best_ad_title = 'Budweiser - Lost Dog'
       worst_ad_title = 'Donald Trump - Criminal Justice Reform'
