@@ -4,7 +4,6 @@ import streamlit as st
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 from scipy import stats
-from load_css import local_css
 
 
 st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Optimizer',
