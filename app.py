@@ -118,7 +118,7 @@ mood_map = {
     }
 
 celeb_map = {
-    'Athlete':'n_athlete',
+    'Athletes':'n_athlete',
     'Bands':'n_band',
     'Business Leaders':'n_business_leader',
     'Comedians':'n_comedian',
