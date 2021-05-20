@@ -113,18 +113,17 @@ celebs = st.multiselect(
     [x for x in celeb_map.keys()]
     )
 
-count_celebs = 0;
 
-for count, value in enumerate(celebs):
-  count_celebs = count
+for celeb in celebs:
+  st.write(celeb)
 
 
 #for i in celeb_map.length:
  # if (celeb_map[i].selected):
  #   count_celebs = count_celebs+1
 
-if count_celebs > 0:
-  st.write('TEST')
+# if count_celebs > 0:
+#   st.write('TEST')
 
 
 
