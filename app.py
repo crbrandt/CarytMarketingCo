@@ -10,6 +10,9 @@ st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Opti
                    page_icon='https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png',
                    layout="wide")
 
+def highlight(text):
+     st.markdown(f'<p style="background-color:#f19e28;color:#fffff;font-size:16px;border-radius:2%;">{text}</p>', unsafe_allow_html=True)
+
 
 # streamlit run C:\Users\brown\Desktop\MSDS\Capstone\predict.py
 
@@ -194,7 +197,7 @@ cluster_info = st.slider('Cluster Number: ', min_value = 0, max_value = 5)
 if button:
     st.write('Model inputs: ' + str(model_inputs))
     result = predict(industry,moods, celeb_sliders)
-    st.write('Your Predicted Ad Score is {}'.format(result) + ' out of 100')
+    highlight(st.write('Your Predicted Ad Score is {}'.format(result) + ' out of 100'))
     if cluster_info == 0:
       best_ad_title = 'Budweiser - Lost Dog'
       worst_ad_title = 'Donald Trump - Criminal Justice Reform'
@@ -259,10 +262,7 @@ else:
     st.write("#")
     st.write("#")
 
-def header(url):
-     st.markdown(f'<p style="background-color:#0066cc;color:#33ff33;font-size:24px;border-radius:2%;">{url}</p>', unsafe_allow_html=True)
     
-st.markdown(header('Hello'))
 
 # Bottom Row ------------------------------------------------------------------------
 st.markdown('___')
