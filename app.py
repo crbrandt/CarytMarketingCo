@@ -122,9 +122,9 @@ celeb_map = {
     'Bands':'n_band',
     'Business Leaders':'n_business_leader',
     'Comedians':'n_comedian',
-    'Football Coaches':'n_football_coaches'
+    'Football Coaches':'n_football_coaches',
     'Historical Figures':'n_historical_figures',
-    'Models':'n_models'
+    'Models':'n_models',
     'Musicians':'n_musician',
     'NFL Players':'n_nfl',
     'Politicians':'n_politicians',
