@@ -245,7 +245,7 @@ if button:
       st.write(f'Ad Score: {best_ad_score}')
       st.video(best_ad_link)
     with col2:
-      st.markdown(f'## Worst Ad of Cluster: {worst_ad_title}')
+      st.markdown(f'### Worst Ad of Cluster: {worst_ad_title}')
       st.write(f'Ad Score: {worst_ad_score}')
       st.video(worst_ad_link)
 else:
