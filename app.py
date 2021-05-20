@@ -109,9 +109,19 @@ moods = st.multiselect(
     )
 
 celebs = st.multiselect(
-    'Select Celebrities in Your Advertisement',
+    'Select Types of Celebrities in Your Advertisement',
     [x for x in celeb_map.keys()]
     )
+
+count_celebs = 0;
+for (var i=0; i < celeb_map.length; i++) {
+  if (celeb_map[i].selected) count_celebs++;
+}
+
+if count_celebs > 0:
+  st.write('TEST')
+
+
 
 button = st.button('Predict')
 
