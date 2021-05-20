@@ -189,8 +189,6 @@ for celeb in celebs:
 button = st.button('Predict')
 best_ad_link = worst_ad_link = best_ad_title = worst_ad_title = best_ad_score = worst_ad_score = ''
 
-t = "<div>Hello there my <span class='highlight blue'>name <span class='bold'>yo</span> </span> is <span class='highlight red'>Fanilo <span class='bold'>Name</span></span></div>"
-st.markdown(t, unsafe_allow_html=True)
 
 cluster_info = st.slider('Cluster Number: ', min_value = 0, max_value = 5)
 
