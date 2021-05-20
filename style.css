@@ -8,9 +8,14 @@
   padding-left: 1rem;
   font-weight: 700;
 }
-.blue {
-  background-color: lightcoral;
+.orangebackground {
+  background-color: "#f19e28";
 }
-.red {
-  background-color: lightblue;
+.orangetext {
+  color: "#f19e28";
+}
+.orangetextbold {
+  padding-left: 1rem;
+  font-weight: 700;
+  color: "#f19e28";
 }
