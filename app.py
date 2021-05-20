@@ -186,25 +186,45 @@ for celeb in celebs:
 # if count_celebs > 0:
 #   st.write('TEST')
 
-
-
 button = st.button('Predict')
+best_ad_link = ''
+worst_ad_linl = ''
+
+cluster_info = st.slider('Cluster Number: ' min_value = 0, max_value = 5)
 
 if button:
     st.write('Model inputs: ' + str(model_inputs))
     result = predict(industry,moods, celeb_sliders)
     st.write('Your Predicted Ad Score is {}'.format(result) + ' out of 100')
+    if cluster_info = 0:
+      best_ad_link = 'https://www.youtube.com/watch?v=TPKgC8KPBMg'
+      worst_ad_link = 'https://www.youtube.com/watch?v=Xtv_PJE8xns'
+    else if cluster_info = 1:
+      best_ad_link = 'https://www.youtube.com/watch?v=e7iSdU7cuCA'
+      worst_ad_link = 'https://www.youtube.com/watch?v=c_eamwX_lZk'
+    else if cluster_info = 2:
+      best_ad_link = 'https://www.youtube.com/watch?v=tJjiIuH1VnY'
+      worst_ad_link = 'https://www.youtube.com/watch?v=lbkafMhmvMo'
+    else if cluster_info = 3:
+      best_ad_link = 'https://www.youtube.com/watch?v=pVxmT2x3Od4'
+      worst_ad_link = 'https://www.youtube.com/watch?v=8iWt3DJIDa0'
+    else if cluster_info = 4:
+      best_ad_link = 'https://www.youtube.com/watch?v=EMgA-y2nRWE'
+      worst_ad_link = 'https://www.youtube.com/watch?v=fF0ZmIf7H9k'
+    else if cluster_info = 5:
+      best_ad_link = 'https://www.youtube.com/watch?v=iNxvsxU2rJE'
+      worst_ad_link = 'https://www.youtube.com/watch?v=AXCCmCwzRPs'
     st.write('**Cluster Profile: (INSERT NAME)**')
     st.write('(CLUSTER DESCRIPTION)')
     col1, col2 = st.beta_columns(2)
     with col1:
       st.markdown("## Best Ad of Cluster: ")
       st.write('AD Score: (Insert Here)')
-      st.video("https://www.youtube.com/embed/xxNxqveseyI")
+      st.video(best_ad_link)
     with col2:
       st.markdown("## Worst Ad of Cluster: ")
       st.write('AD Score: (Insert Here)')
-      st.video("https://www.youtube.com/embed/xxNxqveseyI")
+      st.video(worst_ad_link)
 else:
     st.write("#")
     st.write("#")
