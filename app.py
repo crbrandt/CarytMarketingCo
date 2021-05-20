@@ -39,7 +39,8 @@ model_inputs = {
 }
 
 def predict(industry,moods,celebs):
-    model_inputs[industry_map[industry]] = 1
+    if industry_map[industry] in model_inputs:
+        model_inputs[industry_map[industry]] = 1
 
     for mood in moods:
         if mood_map[mood] in model_inputs:
@@ -51,15 +52,33 @@ def predict(industry,moods,celebs):
 
 industry_map = {
     'Beer':'industry_beer',
+    'Candy':'industry_candy',
     'Cars':'industry_cars1',
+    'Cleaning Supplies':'industry_cleaning_supplies',
     'Computer Software':'industry_computer_software',
+    'Computer Hardware':'industry_computer_hardware',
     'Entertainment':'industry_entertainment',
+    'Energy Drinks':'industry_energy_drinks',
     'Fast Food':'industry_fast_food',
+    'Food Delivery':'industry_food_delivery',
+    'Freelancers':'industry_freelancers',
     'Games':'industry_games',
+    'Hygiene':'industry_hygiene',
+    'Insurance':'industry_insurance',
+    'Job Search':'industry_job_search',
+    'Lawn Care':'industry_lawn_care',
+    'Liquors':'industry_alcoholic_beverages',
     'Loans':'industry_loans',
+    'Mobile Phones':'industry_mobile_phones',
+    'Mortgages':'industry_mortgages',
+    'Online Streaming':'industry_online_streaming',
+    'Potato Chips':'industry_potato_chips',
     'Snacks':'industry_snacks1',
+    'Soap':'industry_soap',
     'Soft Drinks':'industry_soft_drinks',
     'Sports Leagues':'industry_sports_leagues',
+    'Taxes':'industry_taxes',
+    'Travel':'industry_travel_industry',
     'Virtual Assistants':'industry_virtual_assistants'
     }
 
