@@ -4,6 +4,7 @@ import streamlit as st
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 from scipy import stats
+from load_css import local_css
 
 
 st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Optimizer',
@@ -187,6 +188,9 @@ for celeb in celebs:
 
 button = st.button('Predict')
 best_ad_link = worst_ad_link = best_ad_title = worst_ad_title = best_ad_score = worst_ad_score = ''
+
+t = "<div>Hello there my <span class='orange'>name <span class='bold'>yo</span> </span> is <span class='highlight orange'>Fanilo <span class='bold'>Name</span></span></div>"
+st.markdown(t, unsafe_allow_html=True)
 
 cluster_info = st.slider('Cluster Number: ', min_value = 0, max_value = 5)
 
