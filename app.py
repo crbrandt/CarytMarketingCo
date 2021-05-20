@@ -199,19 +199,19 @@ if button:
     if cluster_info == 0:
       best_ad_link = 'https://www.youtube.com/watch?v=TPKgC8KPBMg'
       worst_ad_link = 'https://www.youtube.com/watch?v=Xtv_PJE8xns'
-    else if cluster_info == 1:
+    if cluster_info == 1:
       best_ad_link = 'https://www.youtube.com/watch?v=e7iSdU7cuCA'
       worst_ad_link = 'https://www.youtube.com/watch?v=c_eamwX_lZk'
-    else if cluster_info == 2:
+    if cluster_info == 2:
       best_ad_link = 'https://www.youtube.com/watch?v=tJjiIuH1VnY'
       worst_ad_link = 'https://www.youtube.com/watch?v=lbkafMhmvMo'
-    else if cluster_info == 3:
+    if cluster_info == 3:
       best_ad_link = 'https://www.youtube.com/watch?v=pVxmT2x3Od4'
       worst_ad_link = 'https://www.youtube.com/watch?v=8iWt3DJIDa0'
-    else if cluster_info == 4:
+    if cluster_info == 4:
       best_ad_link = 'https://www.youtube.com/watch?v=EMgA-y2nRWE'
       worst_ad_link = 'https://www.youtube.com/watch?v=fF0ZmIf7H9k'
-    else if cluster_info == 5:
+    if cluster_info == 5:
       best_ad_link = 'https://www.youtube.com/watch?v=iNxvsxU2rJE'
       worst_ad_link = 'https://www.youtube.com/watch?v=AXCCmCwzRPs'
     st.write('**Cluster Profile: (INSERT NAME)**')
