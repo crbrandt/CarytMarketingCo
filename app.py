@@ -242,11 +242,11 @@ if button:
     col1, col2 = st.beta_columns(2)
     with col1:
       st.markdown('## Best Ad of Cluster: ')
-      st.write(f'AD Score: {best_ad_score}')
+      st.write(f'Ad Score: {best_ad_score}')
       st.video(best_ad_link)
     with col2:
       st.markdown('## Worst Ad of Cluster: ')
-      st.write(f'AD Score: {worst_ad_score}')
+      st.write(f'Ad Score: {worst_ad_score}')
       st.video(worst_ad_link)
 else:
     st.write("#")
