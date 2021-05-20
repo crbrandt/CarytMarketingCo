@@ -115,7 +115,7 @@ celebs = st.multiselect(
 
 
 for celeb in celebs:
-  st.write(celeb)
+  st.slider(f'Number of {celeb}: ' , min_value=1, max_value=10)
 
 
 #for i in celeb_map.length:
