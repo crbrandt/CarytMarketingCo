@@ -60,11 +60,13 @@ industry_map = {
     'Entertainment':'industry_entertainment',
     'Energy Drinks':'industry_energy_drinks',
     'Fast Food':'industry_fast_food',
+    'Financial Services':'industry_financial_services',
     'Food Delivery':'industry_food_delivery',
     'Freelancers':'industry_freelancers',
     'Games':'industry_games',
     'Hygiene':'industry_hygiene',
     'Insurance':'industry_insurance',
+    'Investments':'industry_investments',
     'Job Search':'industry_job_search',
     'Lawn Care':'industry_lawn_care',
     'Liquors':'industry_alcoholic_beverages',
@@ -73,6 +75,8 @@ industry_map = {
     'Mortgages':'industry_mortgages',
     'Online Streaming':'industry_online_streaming',
     'Potato Chips':'industry_potato_chips',
+    'Retail Stores':'industry_retail_stores',
+    'Shoes':'industry_shoes',
     'Snacks':'industry_snacks1',
     'Soap':'industry_soap',
     'Soft Drinks':'industry_soft_drinks',
@@ -114,7 +118,19 @@ mood_map = {
     }
 
 celeb_map = {
+    'Athlete':'n_athlete',
+    'Bands':'n_band',
+    'Business Leaders':'n_business_leader',
+    'Comedians':'n_comedian',
+    'Football Coaches':'n_football_coaches'
+    'Historical Figures':'n_historical_figures',
+    'Models':'n_models'
+    'Musicians':'n_musician',
     'NFL Players':'n_nfl',
+    'Politicians':'n_politicians',
+    'Reality TV Stars':'n_reality_tv_stars',
+    'Sports Commentators':'n_sports_commentators',
+    'Talk Show Hosts':'n_talk_show_hosts',
     'Top Actors':'n_top_actors'
     }
 
