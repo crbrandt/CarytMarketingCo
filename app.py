@@ -114,7 +114,7 @@ celeb_sliders = []
 for celeb in celebs:
     celeb_slider = st.slider(f'Number of {celeb}: ' , min_value=1, max_value=10)
     model_inputs[celeb_map[celeb]] = celeb_slider
-    st.write(celeb_slider)
+    
     
 
 # for slider in celeb_sliders:
