@@ -72,13 +72,13 @@ mood_map = {
     'Dramatic':'mood_dramatic',
     'Emotional':'mood_emotional',
     'Exciting':'mood_exciting',
-    'Flirty':'mood_flirty'
+    'Flirty':'mood_flirty',
     'Funny':'mood_funny',
     'Goofy':'mood_goofy',
     'Gross':'mood_gross',
     'Heartwarming':'mood_heartwarming',
     'Informative':'mood_informative',
-    'Inspirational':'mood_inspirational'
+    'Inspirational':'mood_inspirational',
     'Light-hearted':'mood_light hearted',
     'Mysterious':'mood_mysterious',
     'Party-themed':'mood_party themed',
