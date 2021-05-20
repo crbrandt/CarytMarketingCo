@@ -43,9 +43,6 @@ def predict(industry,moods,celebs):
 
     for mood in moods:
         model_inputs[mood_map[mood]] = 1
-        
-    for celeb in celebs:
-        model_inputs[celeb_map[celeb]] = 1
 
     prediction = round(model.predict(model_inputs)[0]*100,2)
     
@@ -113,11 +110,11 @@ celebs = st.multiselect(
     [x for x in celeb_map.keys()]
     )
 
-# celeb_sliders = []
+celeb_sliders = []
 for celeb in celebs:
     celeb_slider = st.slider(f'Number of {celeb}: ' , min_value=1, max_value=10)
+    model_inputs[celeb_map[celeb]] = celeb_slider
     st.write(celeb_slider)
-    
     
 
 # for slider in celeb_sliders:
@@ -135,7 +132,8 @@ for celeb in celebs:
 button = st.button('Predict')
 
 if button:
-    result = predict(industry,moods, celebs)
+    st.write('Model inputs: ' + str(model_inputs))
+    result = predict(industry,moods, celeb_sliders)
     st.write('Your Predicted Ad Score is {}'.format(result) + ' out of 100')
     st.write('**Cluster Profile: (INSERT NAME)**')
     st.write('(CLUSTER DESCRIPTION)')
