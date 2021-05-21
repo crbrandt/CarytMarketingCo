@@ -175,7 +175,7 @@ industry = st.selectbox(
         'Games',
         'Loans',
         'Music, Movies, and Entertainment',
-        'Snacks'
+        'Snacks',
         'Soft Drinks',
         'Software and Technology',
         'Sports Leagues',
