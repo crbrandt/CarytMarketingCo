@@ -225,6 +225,7 @@ best_ad_link = worst_ad_link = best_ad_title = worst_ad_title = best_ad_score = 
 
 #cluster_info = st.slider('Cluster Number: ', min_value = 0, max_value = 5)
 cluster_info = 0;
+cluster_text = ''
 
 if button:
     result = predict(industry,moods, celeb_sliders)
@@ -277,6 +278,15 @@ if button:
       worst_ad_link = 'https://www.youtube.com/watch?v=AXCCmCwzRPs'
       best_ad_score = '77 out of 100'
       worst_ad_score = '32 out of 100'
+      cluster_name = 'Superbowl/NFL Advertisements'
+      cluster_text = """
+        ### Markdown
+        Unordered List:
+        - First
+        - Second
+            - thirdt
+            - Fourth
+        """
     if cluster_info == 1:
       best_ad_title = 'Budweiser - Lost Dog'
       worst_ad_title = 'Donald Trump - Criminal Justice Reform'
@@ -284,6 +294,7 @@ if button:
       worst_ad_link = 'https://www.youtube.com/watch?v=Xtv_PJE8xns'
       best_ad_score = '81 out of 100'
       worst_ad_score = '33 out of 100'
+      cluster_name = '\'The Unique\''
     if cluster_info == 2:
       best_ad_title = 'M&M\'S - Bad Passengers'
       worst_ad_title = 'Burger King - Eat like Andy'
@@ -291,6 +302,7 @@ if button:
       worst_ad_link = 'https://www.youtube.com/watch?v=HcbWkcDRJjc'
       best_ad_score = '65 out of 100'
       worst_ad_score = '46 out of 100'
+      cluster_name = 'Food, Drink, and Movies'
     if cluster_info == 3:
       best_ad_title = 'Kia Niro - Hero\'s Journey'
       worst_ad_title = 'Lexus LS 500 F SPORT - Blank Panther'
@@ -298,6 +310,7 @@ if button:
       worst_ad_link = 'https://www.youtube.com/watch?v=1isIeJy6lTE'
       best_ad_score = '77 out of 100'
       worst_ad_score = '51 out of 100'
+      cluster_name = 'Cars, cars, and more cars'
     if cluster_info == 4:
       best_ad_title = 'Netflix - Our Planet'
       worst_ad_title = 'Quibi - Bank Heist'
@@ -305,6 +318,7 @@ if button:
       worst_ad_link = 'https://www.youtube.com/watch?v=cBlKObT5dv0'
       best_ad_score = '61 out of 100'
       worst_ad_score = '44 out of 100'
+      cluster_name = 'Streaming Services'
     if cluster_info == 5:
       best_ad_title = 'Bud Light - Special Delivery'
       worst_ad_title = 'Michelob Ultra - Breathe'
@@ -312,8 +326,9 @@ if button:
       worst_ad_link = 'https://www.youtube.com/watch?v=s4A_BsWnY8w'
       best_ad_score = '61 out of 100'
       worst_ad_score = '41 out of 100'
+      cluster_name = 'Chatting with Beer'
     st.write('**Cluster Profile: (INSERT NAME)**')
-    st.write('(CLUSTER DESCRIPTION)')
+    st.write(cluster_text)
     col1, col2 = st.beta_columns(2)
     with col1:
       st.markdown('### Ad from this cluster which performed well:')
