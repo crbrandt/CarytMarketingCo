@@ -63,14 +63,14 @@ industry_map = {
     'Cars':'industry_cars1',
     'Cleaning Supplies':'industry_cleaning_supplies',
     'Cola Drinks': 'industry_cola_drinks',
-    'Computer Software':'industry_computer_software',
+    'Software and Technology':'industry_computer_software',
     'Computer Hardware':'industry_computer_hardware',
     'Credit Cards':'industry_credit_cards',
     'Deodorant':'industry_deodorant',
     'Dips':'industry_dips',
-    'Entertainment':'industry_entertainment',
+    'Music, Movies, and Entertainment':'industry_entertainment',
     'Energy Drinks':'industry_energy_drinks',
-    'Fast Food':'industry_fast_food',
+    'Restaurants and Fast Food':'industry_fast_food',
     'Financial Services':'industry_financial_services',
     'Food Delivery':'industry_food_delivery',
     'Freelancers':'industry_freelancers',
@@ -170,15 +170,17 @@ industry = st.selectbox(
     (
         'Beer',
         'Cars',
-        'Computer Software',
-        'Entertainment',
-        'Fast Food',
+        'Cellular, Internet, and TV Providers',
+        'Restaurants and Fast Food',
         'Games',
         'Loans',
-        'Snacks',
+        'Music, Movies, and Entertainment',
+        'Snacks'
         'Soft Drinks',
-        'Sports Leagues'
-        'Virtual Assistants'
+        'Software and Technology',
+        'Sports Leagues',
+        'Virtual Assistants',
+        'Other'
         )
     )
 
