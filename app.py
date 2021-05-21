@@ -61,6 +61,7 @@ industry_map = {
     'Beverages':'industry_beverages',
     'Candy':'industry_candy',
     'Cars':'industry_cars1',
+    'Cellular, Internet, and TV Providers': 'industry_cellular',
     'Cleaning Supplies':'industry_cleaning_supplies',
     'Cola Drinks': 'industry_cola_drinks',
     'Software and Technology':'industry_computer_software',
