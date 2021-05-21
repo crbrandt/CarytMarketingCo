@@ -233,11 +233,11 @@ if button:
         #
     #
     #
-    if industry == 'beer' and 'Cute/Adorable' not in moods and 'Inspirational' not in moods and 'Heartwarming' not in moods and 'Dramatic' not in moods:
+    if industry == 'Beer' and 'Cute/Adorable' not in moods and 'Inspirational' not in moods and 'Heartwarming' not in moods and 'Dramatic' not in moods:
       cluster_info = 5
-    if industry == 'beer' and ('Cute/Adorable' in moods or 'Inspirational' in moods or 'Heartwarming' in moods or 'Dramatic' in moods):
+    if industry == 'Beer' and ('Cute/Adorable' in moods or 'Inspirational' in moods or 'Heartwarming' in moods or 'Dramatic' in moods):
       cluster_info = 1
-    if industry == 'cars':
+    if industry == 'Cars':
       cluster_info = 3
     if industry == 'Cellular, Internet, and TV Providers':
       cluster_info = 5
@@ -249,6 +249,8 @@ if button:
       cluster_info = 1
     if industry == 'Music, Movies, and Entertainment':
       cluster_info = 2
+    if industry == 'Online Streaming Services':
+      cluster_info = 4
     if industry == 'Snacks':
       cluster_info = 2
     if industry == 'Soft Drinks':
@@ -260,6 +262,8 @@ if button:
     if industry == 'Virtual Assistants' and ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
       cluster_info = 2
     if industry == 'Virtual Assistants' and not ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
+      cluster_info = 1
+    if industry == 'Other':
       cluster_info = 1
     if industry == 'Sports Leagues' or model_inputs[celeb_map['NFL Players']] > 2:
       cluster_info = 0
