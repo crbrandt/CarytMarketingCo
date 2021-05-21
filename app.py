@@ -280,12 +280,10 @@ if button:
       worst_ad_score = '32 out of 100'
       cluster_name = 'Superbowl/NFL Advertisements'
       cluster_text = """
-        ### Markdown
-        Unordered List:
-        - First
-        - Second
-            - thirdt
-            - Fourth
+        - This cluster had the highest average rating among all the clusters.
+        - Primarily composed of advertisements in regards to the Superbowl or involving NFL actors.
+        - A common theme is the advertisement showcasing some sort of party theme.
+        - Exciting or funny moods are the most likely.
         """
     if cluster_info == 1:
       best_ad_title = 'Budweiser - Lost Dog'
@@ -295,6 +293,12 @@ if button:
       best_ad_score = '81 out of 100'
       worst_ad_score = '33 out of 100'
       cluster_name = '\'The Unique\''
+      cluster_text = """
+        - Largest cluster out of all of them and thus contained the most variety in all the attributes. However this was an indication that this cluster contained the advertisements that were most unique.
+        - While popular industries are present here, this cluster contains industries that are not very popular or common such as sex paraphernalia and politics.
+        - Athletes in general are commonly found as actors here along with politicians and other famous personnel.
+        - The moods vary with the biggest two being funny and exciting, but the variety stretching from light hearted to patriotic to emotional.
+        """
     if cluster_info == 2:
       best_ad_title = 'M&M\'S - Bad Passengers'
       worst_ad_title = 'Burger King - Eat like Andy'
@@ -303,6 +307,12 @@ if button:
       best_ad_score = '65 out of 100'
       worst_ad_score = '46 out of 100'
       cluster_name = 'Food, Drink, and Movies'
+      cluster_text = """
+        - This Cluster was primarily composed of advertisements for a variety of beverages and snacks. Full meals were not prevalent in general but specifically snacks and drinks were quite common.
+        - This cluster contained advertisements that used the highest amount of actors, both of the well-known fame level and of a lesser level.
+        - This cluster was far more likely to contain some sort of comedian either in the story or as an actor.
+        - Funny and exciting were the predominant moods.
+        """
     if cluster_info == 3:
       best_ad_title = 'Kia Niro - Hero\'s Journey'
       worst_ad_title = 'Lexus LS 500 F SPORT - Blank Panther'
@@ -311,6 +321,12 @@ if button:
       best_ad_score = '77 out of 100'
       worst_ad_score = '51 out of 100'
       cluster_name = 'Cars, cars, and more cars'
+      cluster_text = """
+        - This cluster was predominantly made up of advertisements for specific car models and car manufacturers. There was also a non-insignificant amount of movie  and game focused ads.
+        - This cluster had the most talk show hosts involved as part of the story or in the capacity of an actor.
+        - These advertisements involved the most actors on a number basis (i.e on set and on screen).
+        - Dramatic and adventurous were the most common moods.
+        """
     if cluster_info == 4:
       best_ad_title = 'Netflix - Our Planet'
       worst_ad_title = 'Quibi - Bank Heist'
@@ -319,6 +335,12 @@ if button:
       best_ad_score = '61 out of 100'
       worst_ad_score = '44 out of 100'
       cluster_name = 'Streaming Services'
+      cluster_text = """
+        - This group is mainly composed of streaming services
+        - There tend to be musicians either involved in the story on screen.
+        - Only category with wrestlers involved in either the story or as actors.
+        - Funny or inspirational moods are the most likely.
+        """
     if cluster_info == 5:
       best_ad_title = 'Bud Light - Special Delivery'
       worst_ad_title = 'Michelob Ultra - Breathe'
@@ -327,7 +349,13 @@ if button:
       best_ad_score = '61 out of 100'
       worst_ad_score = '41 out of 100'
       cluster_name = 'Chatting with Beer'
-    st.write('**Cluster Profile: (INSERT NAME)**')
+      cluster_text = """
+        - This cluster was composed of two industries primarily, the alcohol industry with a focus on beer, and on the mobile providers and new phone models.
+        - Contained one of the smallest amounts of well-known actors, and in general, used very few actors on set.
+        - Following along with the beer grouping, this cluster also had a high amount of potato chip advertisements paired with it.
+        - The predominant mood was funny by a very large margin with goofy and adorable being the only two significant moods following it.
+        """
+    st.write(f'Cluster Profile: {cluster_name}')
     st.write(cluster_text)
     col1, col2 = st.beta_columns(2)
     with col1:
