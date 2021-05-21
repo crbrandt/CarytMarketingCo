@@ -170,6 +170,7 @@ with col_title:
   st.markdown(' ## Powered by Caryt Marketing Co.')
 with col_logo:
   st.image("https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png")
+st.write("#")
 
 
 industry = st.selectbox(
