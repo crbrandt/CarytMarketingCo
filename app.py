@@ -159,7 +159,7 @@ celeb_map = {
 
 col_title, col_logo = st.beta_columns([4,1])
 with col_title:
-  st.title('Super Bowl Advertisement Optimizer')
+  st.title('Super Bowl Advertisement Analyzer')
   st.markdown(' ## Powered by Caryt Marketing Co.')
 with col_logo:
   st.image("https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png")
