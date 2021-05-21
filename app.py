@@ -97,7 +97,7 @@ industry_map = {
     'Shoes':'industry_shoes',
     'Snacks':'industry_snacks1',
     'Soap':'industry_soap',
-    'Social Media':'industry_social_media'
+    'Social Media':'industry_social_media',
     'Soft Drinks':'industry_soft_drinks',
     'Sports Leagues':'industry_sports_leagues',
     'Taxes':'industry_taxes',
