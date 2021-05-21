@@ -199,7 +199,7 @@ moods = st.multiselect(
     )
 
 if len(moods) > 3:
-  st.write('Please limit your mood selections to three or less.')
+  color('Please limit your mood selections to three or less.')
 
 celebs = st.multiselect(
     'Select Types of Celebrities in Your Advertisement',
