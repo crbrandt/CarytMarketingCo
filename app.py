@@ -228,6 +228,7 @@ cluster_info = 0;
 
 if button:
     result = predict(industry,moods, celeb_sliders)
+    st.write(industry)
     highlight(('Your Predicted Ad Score is {}'.format(result) + ' out of 100'))
         #
     #
