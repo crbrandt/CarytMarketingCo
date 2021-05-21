@@ -233,9 +233,9 @@ if button:
         #
     #
     #
-    if industry == 'Beer' and 'Cute/Adorable' not in moods and 'Inspirational' not in moods and 'Heartwarming' not in moods and 'Dramatic' not in moods:
+    if industry == 'Beer' and 'Inspirational' not in moods and 'Heartwarming' not in moods and 'Dramatic' not in moods and 'Somber' not in moods and 'Serious' not in moods:
       cluster_info = 5
-    if industry == 'Beer' and ('Cute/Adorable' in moods or 'Inspirational' in moods or 'Heartwarming' in moods or 'Dramatic' in moods):
+    if industry == 'Beer' and not ('Inspirational' not in moods and 'Heartwarming' not in moods and 'Dramatic' not in moods and 'Somber' not in moods and 'Serious' not in moods):
       cluster_info = 1
     if industry == 'Cars':
       cluster_info = 3
