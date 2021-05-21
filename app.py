@@ -88,7 +88,7 @@ industry_map = {
     'Mortgages':'industry_mortgages',
     'Movies':'industry_movies',
     'Nuts':'industry_nuts',
-    'Online Retailers','industry_online_retailers',
+    'Online Retailers':'industry_online_retailers',
     'Online Streaming':'industry_online_streaming',
     'Pizza':'industry_pizza',
     'Potato Chips':'industry_potato_chips',
