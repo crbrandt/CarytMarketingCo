@@ -224,9 +224,14 @@ best_ad_link = worst_ad_link = best_ad_title = worst_ad_title = best_ad_score = 
 
 
 #cluster_info = st.slider('Cluster Number: ', min_value = 0, max_value = 5)
-
+cluster_info = 0;
 
 if button:
+    result = predict(industry,moods, celeb_sliders)
+    highlight(('Your Predicted Ad Score is {}'.format(result) + ' out of 100'))
+        #
+    #
+    #
     if industry == 'beer' and 'Cute/Adorable' not in moods and 'Inspirational' not in moods and 'Heartwarming' not in moods and 'Dramatic' not in moods:
       cluster_info = 5
     if industry == 'beer' and ('Cute/Adorable' in moods or 'Inspirational' in moods or 'Heartwarming' in moods or 'Dramatic' in moods):
@@ -260,8 +265,6 @@ if button:
     #
     #
     #
-    result = predict(industry,moods, celeb_sliders)
-    highlight(('Your Predicted Ad Score is {}'.format(result) + ' out of 100'))
     if cluster_info == 0:
       best_ad_title = 'NFL - The 100-Year Game'
       worst_ad_title = 'Jublia - Best Kept Secret'
