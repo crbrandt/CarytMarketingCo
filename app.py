@@ -225,39 +225,41 @@ best_ad_link = worst_ad_link = best_ad_title = worst_ad_title = best_ad_score = 
 
 #cluster_info = st.slider('Cluster Number: ', min_value = 0, max_value = 5)
 
-if industry == 'beer' and 'Cute/Adorable' not in moods and 'Inspirational' not in moods and 'Heartwarming' not in moods and 'Dramatic' not in moods:
-  cluster_info = 5
-if industry == 'beer' and ('Cute/Adorable' in moods or 'Inspirational' in moods or 'Heartwarming' in moods or 'Dramatic' in moods):
-  cluster_info = 1
-if industry == 'cars':
-  cluster_info = 3
-if industry == 'Cellular, Internet, and TV Providers':
-  cluster_info = 5
-if industry == 'Restaurants and Fast Food':
-  cluster_info = 2
-if industry == 'Games':
-  cluster_info = 3
-if industry == 'Loans':
-  cluster_info = 1
-if industry == 'Music, Movies, and Entertainment':
-  cluster_info = 2
-if industry == 'Snacks':
-  cluster_info = 2
-if industry == 'Soft Drinks':
-  cluster_info = 2
-if industry == 'Software and Technology' and ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
-  cluster_info = 5
-if industry == 'Software and Technology' and not ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
-  cluster_info = 1
-if industry == 'Virtual Assistants' and ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
-  cluster_info = 2
-if industry == 'Virtual Assistants' and not ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
-  cluster_info = 1
-if industry == 'Sports Leagues' or model_inputs[celeb_map['NFL Players']] > 2:
-  cluster_info = 0
 
 if button:
-    #st.write('Model inputs: ' + str(model_inputs))
+    if industry == 'beer' and 'Cute/Adorable' not in moods and 'Inspirational' not in moods and 'Heartwarming' not in moods and 'Dramatic' not in moods:
+      cluster_info = 5
+    if industry == 'beer' and ('Cute/Adorable' in moods or 'Inspirational' in moods or 'Heartwarming' in moods or 'Dramatic' in moods):
+      cluster_info = 1
+    if industry == 'cars':
+      cluster_info = 3
+    if industry == 'Cellular, Internet, and TV Providers':
+      cluster_info = 5
+    if industry == 'Restaurants and Fast Food':
+      cluster_info = 2
+    if industry == 'Games':
+      cluster_info = 3
+    if industry == 'Loans':
+      cluster_info = 1
+    if industry == 'Music, Movies, and Entertainment':
+      cluster_info = 2
+    if industry == 'Snacks':
+      cluster_info = 2
+    if industry == 'Soft Drinks':
+      cluster_info = 2
+    if industry == 'Software and Technology' and ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
+      cluster_info = 5
+    if industry == 'Software and Technology' and not ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
+      cluster_info = 1
+    if industry == 'Virtual Assistants' and ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
+      cluster_info = 2
+    if industry == 'Virtual Assistants' and not ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
+      cluster_info = 1
+    if industry == 'Sports Leagues' or model_inputs[celeb_map['NFL Players']] > 2:
+      cluster_info = 0
+    #
+    #
+    #
     result = predict(industry,moods, celeb_sliders)
     highlight(('Your Predicted Ad Score is {}'.format(result) + ' out of 100'))
     if cluster_info == 0:
