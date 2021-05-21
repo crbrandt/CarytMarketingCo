@@ -229,7 +229,6 @@ cluster_text = ''
 
 if button:
     result = predict(industry,moods, celeb_sliders)
-    st.write(industry)
     highlight(('Your Predicted Ad Score is {}'.format(result) + ' out of 100'))
         #
     #
@@ -355,7 +354,7 @@ if button:
         - Following along with the beer grouping, this cluster also had a high amount of potato chip advertisements paired with it.
         - The predominant mood was funny by a very large margin with goofy and adorable being the only two significant moods following it.
         """
-    st.write(f'Cluster Profile: {cluster_name}')
+    st.markdown(f'### Cluster Profile: {cluster_name}')
     st.write(cluster_text)
     col1, col2 = st.beta_columns(2)
     with col1:
