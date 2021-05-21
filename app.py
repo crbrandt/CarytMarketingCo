@@ -50,6 +50,10 @@ def predict(industry,moods,celebs):
           model_inputs[mood_map[mood]] = 1
 
     prediction = round(model.predict(model_inputs)[0]*100,2)
+    if prediction < 0:
+      prediction = 0
+    if prediction > 100:
+      prediction = 100
     
     return prediction
 
