@@ -106,7 +106,8 @@ industry_map = {
     'TV Providers':'industry_TV_providers',
     'Virtual Assistants':'industry_virtual_assistants',
     'Water':'industry_water',
-    'Yogurt':'industry_yogurt'
+    'Yogurt':'industry_yogurt',
+    'Other':'other'
     }
 
 mood_map = {
