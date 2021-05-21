@@ -198,6 +198,9 @@ moods = st.multiselect(
     [x for x in mood_map.keys()]
     )
 
+if moods.len > 3:
+  st.write('Please limit your mood selections to three or less.')
+
 celebs = st.multiselect(
     'Select Types of Celebrities in Your Advertisement',
     [x for x in celeb_map.keys()]
@@ -209,18 +212,9 @@ for celeb in celebs:
     model_inputs[celeb_map[celeb]] = celeb_slider
     
     
-
-# for slider in celeb_sliders:
-#   st.write(slider)
-
-#for i in celeb_map.length:
- # if (celeb_map[i].selected):
- #   count_celebs = count_celebs+1
-
-# if count_celebs > 0:
-#   st.write('TEST')
-
-button = st.button('Predict')
+if moods.len <= 3:
+  button = st.button('Predict')
+  
 best_ad_link = worst_ad_link = best_ad_title = worst_ad_title = best_ad_score = worst_ad_score = ''
 
 
