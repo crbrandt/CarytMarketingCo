@@ -273,11 +273,11 @@ if button:
     st.write('(CLUSTER DESCRIPTION)')
     col1, col2 = st.beta_columns(2)
     with col1:
-      st.markdown(f'### Ad from this cluster which performed well:<br>{best_ad_title}')
+      st.markdown(f'### Ad from this cluster which performed well: <br> {best_ad_title}')
       st.write(f'Ad Score: {best_ad_score}')
       st.video(best_ad_link)
     with col2:
-      st.markdown(f'### Ad from this cluster which performed poorly:<br>{worst_ad_title}')
+      st.markdown(f'### Ad from this cluster which performed poorly: <br> {worst_ad_title}')
       st.write(f'Ad Score: {worst_ad_score}')
       st.video(worst_ad_link)
 else:
