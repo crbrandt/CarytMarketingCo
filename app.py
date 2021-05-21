@@ -6,7 +6,7 @@ import statsmodels.formula.api as smf
 from scipy import stats
 
 
-st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Optimizer',
+st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Analyzer',
                    page_icon='https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png',
                    layout="wide")
 
@@ -54,12 +54,20 @@ def predict(industry,moods,celebs):
     return prediction
 
 industry_map = {
+    'Auto Parts & Accessories':'industry_auto_parts_accessories',
+    'Airlines':'industry_airline_industry',
+    'Beauty':'industry_beauty',
     'Beer':'industry_beer',
+    'Beverages':'industry_beverages',
     'Candy':'industry_candy',
     'Cars':'industry_cars1',
     'Cleaning Supplies':'industry_cleaning_supplies',
+    'Cola Drinks': 'industry_cola_drinks',
     'Computer Software':'industry_computer_software',
     'Computer Hardware':'industry_computer_hardware',
+    'Credit Cards':'industry_credit_cards',
+    'Deodorant':'industry_deodorant',
+    'Dips':'industry_dips',
     'Entertainment':'industry_entertainment',
     'Energy Drinks':'industry_energy_drinks',
     'Fast Food':'industry_fast_food',
@@ -67,6 +75,8 @@ industry_map = {
     'Food Delivery':'industry_food_delivery',
     'Freelancers':'industry_freelancers',
     'Games':'industry_games',
+    'Home Security':'industry_home_security',
+    'Hotels':'industry_hotels',
     'Hygiene':'industry_hygiene',
     'Insurance':'industry_insurance',
     'Investments':'industry_investments',
@@ -76,17 +86,27 @@ industry_map = {
     'Loans':'industry_loans',
     'Mobile Phones':'industry_mobile_phones',
     'Mortgages':'industry_mortgages',
+    'Movies':'industry_movies',
+    'Nuts':'industry_nuts',
+    'Online Retailers','industry_online_retailers',
     'Online Streaming':'industry_online_streaming',
+    'Pizza':'industry_pizza',
     'Potato Chips':'industry_potato_chips',
     'Retail Stores':'industry_retail_stores',
+    'Search Engines':'industry_search_engines',
     'Shoes':'industry_shoes',
     'Snacks':'industry_snacks1',
     'Soap':'industry_soap',
+    'Social Media':'industry_social_media'
     'Soft Drinks':'industry_soft_drinks',
     'Sports Leagues':'industry_sports_leagues',
     'Taxes':'industry_taxes',
     'Travel':'industry_travel_industry',
-    'Virtual Assistants':'industry_virtual_assistants'
+    'Trucks':'industry_trucks',
+    'TV Providers':'industry_TV_providers',
+    'Virtual Assistants':'industry_virtual_assistants',
+    'Water':'industry_water',
+    'Yogurt':'industry_yogurt'
     }
 
 mood_map = {
