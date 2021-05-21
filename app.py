@@ -319,7 +319,7 @@ if button:
       worst_ad_link = 'https://www.youtube.com/watch?v=1isIeJy6lTE'
       best_ad_score = '77 out of 100'
       worst_ad_score = '51 out of 100'
-      cluster_name = 'Cars, cars, and more cars'
+      cluster_name = 'Cars, Cars, and More Cars'
       cluster_text = """
         - This cluster was predominantly made up of advertisements for specific car models and car manufacturers. There was also a non-insignificant amount of movie  and game focused ads.
         - This cluster had the most talk show hosts involved as part of the story or in the capacity of an actor.
