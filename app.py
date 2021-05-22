@@ -258,7 +258,7 @@ if len(moods) <= 3 and len(industry) <= 1:
         color('Please select an industry')
       else:
         result = predict(industry,moods, celeb_sliders)
-        preds_2021 = 100*[
+        preds_2021 = [
             0.9874018479124226,
             0.9335280183098901,
             0.8344415540513407,
@@ -316,6 +316,7 @@ if len(moods) <= 3 and len(industry) <= 1:
             0.23450631299758973,
             0.19936680800355822
           ]
+        preds_2021 = [i * 100 for i in preds_2021]
         # Prediction for the inputs in the app (Using .6 as example)
         pred = result
         st.write(preds_2021)
