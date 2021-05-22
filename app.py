@@ -258,6 +258,7 @@ if len(moods) <= 3 and len(industry) <= 1:
         color('Please select an industry')
       else:
         result = predict(industry,moods, celeb_sliders)
+        st.write(industry)
         highlight(('Your Predicted Ad Score is {}'.format(result) + ' out of 100'))
             #
         #
