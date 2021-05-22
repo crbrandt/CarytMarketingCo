@@ -195,10 +195,9 @@ st.write("#")
 
 
 #Selectbox for Industry
-industry = st.selectbox(
-      'Select an Industry',
+industry = st.multiselect(
+      'Select an Industry (Limit one)',
       (
-          'Choose an option',
           'Beer',
           'Cars',
           'Cellular, Internet, and TV Providers',
@@ -216,6 +215,8 @@ industry = st.selectbox(
       ), help = 'Please select the closest industry to your company\'s work.'
       )
 
+if len(industry) > 1:
+  color('Please limit your selection to one industry.')
 
 ##Selectbox for mood (note: if more than three moods are selected, users will not be able to continue)
 moods = st.multiselect(
