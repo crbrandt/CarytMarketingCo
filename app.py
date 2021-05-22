@@ -11,6 +11,9 @@ st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Anal
                    page_icon='https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png',
                    layout="wide")
 
+div[data-baseweb="select"] > div {
+    background-color: '#575757';
+}
 
 ##Creating Text format options with orange colors
 def highlight(text):
