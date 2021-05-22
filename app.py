@@ -233,7 +233,7 @@ for celeb in celebs:
     model_inputs[celeb_map[celeb]] = celeb_slider
     
 
-while len(moods) <= 3:
+if len(moods) <= 3:
     button = st.button('Predict')
 
     best_ad_link = worst_ad_link = best_ad_title = worst_ad_title = best_ad_score = worst_ad_score = ''
