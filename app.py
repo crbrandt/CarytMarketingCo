@@ -54,8 +54,8 @@ model_inputs = {
 ##Creating prediction functions
 def predict(industry,moods,celebs):
     for industry_selection in industry:
-    if industry_map[industry_selection] in model_inputs:
-        model_inputs[industry_map[industry_selection]] = 1
+        if industry_map[industry_selection] in model_inputs:
+            model_inputs[industry_map[industry_selection]] = 1
 
     for mood in moods:
         if mood_map[mood] in model_inputs:
