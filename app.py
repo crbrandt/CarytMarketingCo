@@ -213,7 +213,7 @@ if industry == 'Choose an option':
                 'Sports Leagues',
                 'Virtual Assistants',
                 'Other'
-            ), index = 14
+            )
             )
 else:
   industry = st.selectbox(
