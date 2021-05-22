@@ -190,27 +190,49 @@ with col_logo:
 st.write("#")
 
 
+
 #Selectbox for Industry
+industry = 'Choose an option'
 industry = st.selectbox(
-    'Select an Industry',
-    (
-        'Beer',
-        'Cars',
-        'Cellular, Internet, and TV Providers',
-        'Restaurants and Fast Food',
-        'Games',
-        'Loans',
-        'Music, Movies, and Entertainment',
-        'Online Streaming Services',
-        'Snacks',
-        'Soft Drinks',
-        'Software and Technology',
-        'Sports Leagues',
-        'Virtual Assistants',
-        'Other',
-        ''
-    ), index = 14
-    )
+    if industry = 'Choose an option':
+        'Select an Industry',
+        (
+            'Choose an Option'
+            'Beer',
+            'Cars',
+            'Cellular, Internet, and TV Providers',
+            'Restaurants and Fast Food',
+            'Games',
+            'Loans',
+            'Music, Movies, and Entertainment',
+            'Online Streaming Services',
+            'Snacks',
+            'Soft Drinks',
+            'Software and Technology',
+            'Sports Leagues',
+            'Virtual Assistants',
+            'Other'
+        ), index = 14
+        )
+    else
+        'Select an Industry',
+        (
+            'Beer',
+            'Cars',
+            'Cellular, Internet, and TV Providers',
+            'Restaurants and Fast Food',
+            'Games',
+            'Loans',
+            'Music, Movies, and Entertainment',
+            'Online Streaming Services',
+            'Snacks',
+            'Soft Drinks',
+            'Software and Technology',
+            'Sports Leagues',
+            'Virtual Assistants',
+            'Other'
+        )
+        )
 
 ##Selectbox for mood (note: if more than three moods are selected, users will not be able to continue)
 moods = st.multiselect(
