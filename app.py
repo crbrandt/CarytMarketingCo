@@ -208,7 +208,8 @@ industry = st.selectbox(
         'Sports Leagues',
         'Virtual Assistants',
         'Other'
-        )
+        ''
+    ), index = 14
     )
 
 ##Selectbox for mood (note: if more than three moods are selected, users will not be able to continue)
