@@ -213,14 +213,14 @@ industry = st.selectbox(
           'Sports Leagues',
           'Virtual Assistants',
           'Other'
-      ), help = 'TEST'
+      ), help = 'Please select the closest industry to your company\'s work.'
       )
 
 
 ##Selectbox for mood (note: if more than three moods are selected, users will not be able to continue)
 moods = st.multiselect(
     'Select Mood(s) (Up to 3)',
-    [x for x in mood_map.keys()]
+    [x for x in mood_map.keys()], help = 'Please select the overall moods or feelings evoked by your advertisement."
     )
 
 if len(moods) > 3:
@@ -230,7 +230,7 @@ if len(moods) > 3:
 ##Multiselect for celebrity types. When celebrities are selected, their specific count values will be editable using sliders.
 celebs = st.multiselect(
     'Select Types of Celebrities in Your Advertisement',
-    [x for x in celeb_map.keys()]
+    [x for x in celeb_map.keys()], help = 'Please select the type(s) of celebrities which will be included in your advertisement.'
     )
 
 celeb_sliders = []
