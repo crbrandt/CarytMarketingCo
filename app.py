@@ -194,7 +194,7 @@ st.write("#")
 #Selectbox for Industry
 industry = 'Choose an option'
 
-if industry = 'Choose an option':
+if industry == 'Choose an option':
     industry = st.selectbox(
             'Select an Industry',
             (
