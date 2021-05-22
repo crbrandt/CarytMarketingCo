@@ -347,7 +347,7 @@ if len(moods) <= 3 and len(industry) <= 1:
           cluster_info = 2
         if 'Games' in industry:
           cluster_info = 3
-        if 'Loans' in industry:
+        if 'Financial Services' in industry:
           cluster_info = 1
         if 'Music, Movies, and Entertainment' in industry:
           cluster_info = 2
