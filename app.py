@@ -411,7 +411,7 @@ if len(moods) <= 3 and len(industry) <= 1:
       st.write("#")
       st.write("#")
 
-if len(moods)> 3 or len(industry) > 1:
+if len(moods)> 3 or len(industry) != 1:
       st.write("#")
       st.write("#")
       st.write("#")
