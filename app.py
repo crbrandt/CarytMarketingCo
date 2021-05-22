@@ -265,7 +265,7 @@ if len(moods) <= 3:
         cluster_info = 2
       if industry == 'Virtual Assistants' and not ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
         cluster_info = 1
-      if industry == 'Other' or model_inputs[celeb_map['Politicians']] > 1:
+      if industry == 'Other' or (model_inputs[celeb_map['Politicians']] > 0 and 'Funny' not in moods and 'Goofy' not in moods and 'Sexy' not in moods):
         cluster_info = 1
       if industry == 'Sports Leagues' or model_inputs[celeb_map['NFL Players']] > 2:
         cluster_info = 0
