@@ -6,19 +6,23 @@ import statsmodels.formula.api as smf
 from scipy import stats
 
 
+##Updating Page Logo and Tab Title
 st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Analyzer',
                    page_icon='https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png',
                    layout="wide")
 
+
+##Creating Text format options with orange colors
 def highlight(text):
      st.markdown(f'<p style="text-align: center;color:#f19e28;font-size:22px;border-radius:2%;">{text}</p>', unsafe_allow_html=True)
 def color(text):
      st.markdown(f'<p style="color:#f19e28;font-size:20px;border-radius:2%;">{text}</p>', unsafe_allow_html=True)
 
-# streamlit run C:\Users\brown\Desktop\MSDS\Capstone\predict.py
 
+##Loading in USA Today scoring model from Github
 model = sm.load('./usa_today_model')
 
+##Setting initial values for inputs to the regression model.
 model_inputs = {
   'industry_virtual_assistants':0,
   'industry_cars1':0,
@@ -44,7 +48,7 @@ model_inputs = {
   'n_politician':0
 }
 
-
+##Creating prediction functions
 def predict(industry,moods,celebs):
     if industry_map[industry] in model_inputs:
         model_inputs[industry_map[industry]] = 1
@@ -65,6 +69,7 @@ def predict(industry,moods,celebs):
     
     return prediction
 
+###Mapping industry values in the data to their display options on the application
 industry_map = {
     'Auto Parts & Accessories':'industry_auto_parts_accessories',
     'Airlines':'industry_airline_industry',
@@ -171,6 +176,11 @@ celeb_map = {
     'Top Actors':'n_top_actors'
     }
 
+
+
+##--------------------------------------------------------Application Displayed Portion-----------------------------------------
+
+##Header and Logo
 col_title, col_logo = st.beta_columns([4,1])
 with col_title:
   st.title('Super Bowl Advertisement Analyzer')
@@ -180,6 +190,7 @@ with col_logo:
 st.write("#")
 
 
+#Selectbox for Industry
 industry = st.selectbox(
     'Select an Industry',
     (
@@ -200,6 +211,7 @@ industry = st.selectbox(
         )
     )
 
+##Selectbox for mood (note: if more than three moods are selected, users will not be able to continue)
 moods = st.multiselect(
     'Select Mood(s) (Up to 3)',
     [x for x in mood_map.keys()]
@@ -208,6 +220,8 @@ moods = st.multiselect(
 if len(moods) > 3:
   color('Please limit your mood selections to three or less.')
 
+
+##Multiselect for celebrity types. When celebrities are selected, their specific count values will be editable using sliders.
 celebs = st.multiselect(
     'Select Types of Celebrities in Your Advertisement',
     [x for x in celeb_map.keys()]
@@ -218,8 +232,8 @@ for celeb in celebs:
     celeb_slider = st.slider(f'Number of {celeb}: ' , min_value=1, max_value=10)
     model_inputs[celeb_map[celeb]] = celeb_slider
     
-    
-if len(moods) <= 3:
+
+while len(moods) <= 3:
     button = st.button('Predict')
 
     best_ad_link = worst_ad_link = best_ad_title = worst_ad_title = best_ad_score = worst_ad_score = ''
@@ -380,7 +394,16 @@ if len(moods) <= 3:
       st.write("#")
       st.write("#")
 
-    
+if len(moods)> 3:
+      st.write("#")
+      st.write("#")
+      st.write("#")
+      st.write("#")
+      st.write("#")
+      st.write("#")
+      st.write("#")
+      st.write("#")
+      st.write("#")    
 
 # Bottom Row ------------------------------------------------------------------------
 st.markdown('___')
