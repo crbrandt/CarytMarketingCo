@@ -258,7 +258,7 @@ if len(moods) <= 3 and len(industry) <= 1:
         color('Please select an industry')
       else:
         result = predict(industry,moods, celeb_sliders)
-        preds_2021 = [
+        preds_2021 = 100*[
             0.9874018479124226,
             0.9335280183098901,
             0.8344415540513407,
