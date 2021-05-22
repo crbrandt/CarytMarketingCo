@@ -265,39 +265,39 @@ if len(moods) <= 3 and len(industry) <= 1:
         #
         #Cluster value determinant, based on findings from the Clustering model:
         #
-        if industry == 'Beer' and not ('Inspirational' in moods or 'Heartwarming' in moods or 'Dramatic' in moods or 'Somber' in moods or 'Serious' in moods):
+        if 'Beer' in industry and not ('Inspirational' in moods or 'Heartwarming' in moods or 'Dramatic' in moods or 'Somber' in moods or 'Serious' in moods):
           cluster_info = 5
-        if industry == 'Beer' and ('Inspirational' in moods or 'Heartwarming' in moods or 'Dramatic' in moods or 'Somber' in moods or 'Serious' in moods):
+        if 'Beer' in industry and ('Inspirational' in moods or 'Heartwarming' in moods or 'Dramatic' in moods or 'Somber' in moods or 'Serious' in moods):
           cluster_info = 1
-        if industry == 'Cars':
+        if 'Cars' in industry:
           cluster_info = 3
-        if industry == 'Cellular, Internet, and TV Providers':
+        if 'Cellular, Internet, and TV Providers' in industry:
           cluster_info = 5
-        if industry == 'Restaurants and Fast Food':
+        if 'Restaurants and Fast Food' in industry:
           cluster_info = 2
-        if industry == 'Games':
+        if 'Games' in industry:
           cluster_info = 3
-        if industry == 'Loans':
+        if 'Loans' in industry:
           cluster_info = 1
-        if industry == 'Music, Movies, and Entertainment':
+        if 'Music, Movies, and Entertainment' in industry:
           cluster_info = 2
-        if industry == 'Online Streaming Services':
+        if 'Online Streaming Services' in industry:
           cluster_info = 4
-        if industry == 'Snacks':
+        if 'Snacks' in industry:
           cluster_info = 2
-        if industry == 'Soft Drinks':
+        if 'Soft Drinks' in industry:
           cluster_info = 2
-        if industry == 'Software and Technology' and ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
+        if 'Software and Technology' in industry and ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
           cluster_info = 5
-        if industry == 'Software and Technology' and not ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
+        if 'Software and Technology' in industry and not ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
           cluster_info = 1
-        if industry == 'Virtual Assistants' and ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
+        if 'Virtual Assistants' in industry and ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
           cluster_info = 2
-        if industry == 'Virtual Assistants' and not ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
+        if 'Virtual Assistants' in industry and not ('Funny' in moods or 'Goofy' in moods or 'Party-themed' in moods):
           cluster_info = 1
-        if industry == 'Other' or (model_inputs[celeb_map['Politicians']] > 0 and not ('Funny' in moods or 'Goofy' in moods or 'Sexy' in moods)):
+        if 'Other' in industry or (model_inputs[celeb_map['Politicians']] > 0 and not ('Funny' in moods or 'Goofy' in moods or 'Sexy' in moods)):
           cluster_info = 1
-        if industry == 'Sports Leagues' or model_inputs[celeb_map['NFL Players']] > 2:
+        if 'Sports Leagues' in industry or model_inputs[celeb_map['NFL Players']] > 2:
           cluster_info = 0
         #
         #
