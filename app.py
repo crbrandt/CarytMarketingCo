@@ -20,27 +20,30 @@ def color(text):
 model = sm.load('./usa_today_model')
 
 model_inputs = {
-    'mood_funny':0,
-    'industry_virtual_assistants':0,
-    'industry_cars1':0,
-    'mood_heartwarming':0,
-    'mood_weird':0,
-    'n_nfl':0,
-    'industry_entertainment':0,
-    'industry_soft_drinks':0,
-    'industry_sports_leagues':0,
-    'industry_computer_software':0,
-    'industry_fast_food':0,
-    'mood_informative':0,
-    'n_top_actors':0,
-    'industry_beer':0,
-    'industry_light_beer':0,
-    'mood_emotional':0,
-    'industry_games':0,
-    'industry_snacks1':0,
-    'mood_inspirational':0,
-    'industry_loans':0
+  'industry_virtual_assistants':0,
+  'industry_cars1':0,
+  'industry_entertainment':0,
+  'industry_soft_drinks':0,
+  'industry_sports_leagues':0,
+  'industry_computer_software':0,
+  'industry_fast_food':0,
+  'industry_games':0,
+  'industry_snacks1':0,
+  'industry_mortgages':0,
+  'industry_mortgages * mood_funny':0,
+  'industry_cars1 * mood_funny':0,
+  'mood_funny':0,
+  'mood_heartwarming':0,
+  'mood_weird':0,
+  'mood_emotional':0,
+  'mood_inspirational':0,
+  'mood_cute_adorable':0,
+  'mood_unique':0,
+  'n_nfl':0,
+  'n_top_actors':0,
+  'n_politician':0
 }
+
 
 def predict(industry,moods,celebs):
     if industry_map[industry] in model_inputs:
@@ -49,6 +52,10 @@ def predict(industry,moods,celebs):
     for mood in moods:
         if mood_map[mood] in model_inputs:
           model_inputs[mood_map[mood]] = 1
+          
+    # Interaction Inputs
+    model_inputs['industry_mortgages * mood_funny'] = model_inputs['industry_mortgages'] * model_inputs['mood_funny']
+    model_inputs['industry_cars1 * mood_funny'] = model_inputs['industry_cars1'] * model_inputs['mood_funny']
 
     prediction = round(model.predict(model_inputs)[0]*100,2)
     if prediction < 0:
