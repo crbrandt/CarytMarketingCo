@@ -502,6 +502,8 @@ with about:
     
     Curated by the Caryt Marketing Co. Analytics team: \n
     Cole Brandt, Anton Averin, Ranaa Ansari, Young Jang, Tyrone Brown
+    
+    [Contact Our Team] (mailto:colebrandt2021@u.northwestern.edu)
     '''
     
 st.image("https://i.ibb.co/9qDzx87/Sunrise-Abstract-Shapes-Logo-Template-copy.png",
