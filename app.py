@@ -17,7 +17,7 @@ st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Anal
 
 ##Creating Text format options with orange colors
 def highlight(text):
-     st.markdown(f'<p style="text-align: center;color:#f19e28;font-size:22px;border-radius:2%;">{text}</p>', unsafe_allow_html=True)
+     st.markdown(f'<p style="text-align: center;color:#f19e28;font-size:22px;border-radixus:2%;">{text}</p>', unsafe_allow_html=True)
 def color(text):
      st.markdown(f'<p style="color:#f19e28;font-size:20px;border-radius:2%;">{text}</p>', unsafe_allow_html=True)
 
@@ -53,8 +53,9 @@ model_inputs = {
 
 ##Creating prediction functions
 def predict(industry,moods,celebs):
-    if industry_map[industry] in model_inputs:
-        model_inputs[industry_map[industry]] = 1
+    for industry_selection in industry:
+    if industry_map[industry_selection] in model_inputs:
+        model_inputs[industry_map[industry_selection]] = 1
 
     for mood in moods:
         if mood_map[mood] in model_inputs:
