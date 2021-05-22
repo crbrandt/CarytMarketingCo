@@ -233,9 +233,11 @@ for celeb in celebs:
     model_inputs[celeb_map[celeb]] = celeb_slider
     
 
+##Predictions for score and cluster
 if len(moods) <= 3:
     button = st.button('Predict')
-
+    
+    #Setting initial cluster text values
     best_ad_link = worst_ad_link = best_ad_title = worst_ad_title = best_ad_score = worst_ad_score = ''
 
 
@@ -248,6 +250,8 @@ if len(moods) <= 3:
       highlight(('Your Predicted Ad Score is {}'.format(result) + ' out of 100'))
           #
       #
+      #
+      #Cluster value determinant, based on findings from the Clustering model:
       #
       if industry == 'Beer' and not ('Inspirational' in moods or 'Heartwarming' in moods or 'Dramatic' in moods or 'Somber' in moods or 'Serious' in moods):
         cluster_info = 5
@@ -285,6 +289,8 @@ if len(moods) <= 3:
         cluster_info = 0
       #
       #
+      #
+      ##Cluster descriptions:
       #
       if cluster_info == 0:
         best_ad_title = 'NFL - The 100-Year Game'
@@ -405,7 +411,7 @@ if len(moods)> 3:
       st.write("#")
       st.write("#")    
 
-# Bottom Row ------------------------------------------------------------------------
+# Bottom info bar ------------------------------------------------------------------------
 st.markdown('___')
 about = st.beta_expander('About')
 with about:
