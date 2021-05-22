@@ -318,8 +318,11 @@ if len(moods) <= 3 and len(industry) <= 1:
           ]
         # Prediction for the inputs in the app (Using .6 as example)
         pred = result
+        st.write(preds_2021)
         # Add to list of 2021 predictions
         preds_2021.append(pred)
+        st.write(___)
+        st.write(preds_2021)
         # Sort descending
         preds_2021.sort(reverse=True)
         # Hypothetical rank in 2021
