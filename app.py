@@ -220,7 +220,7 @@ industry = st.selectbox(
 ##Selectbox for mood (note: if more than three moods are selected, users will not be able to continue)
 moods = st.multiselect(
     'Select Mood(s) (Up to 3)',
-    [x for x in mood_map.keys()], help = 'Please select the overall moods or feelings evoked by your advertisement."
+    [x for x in mood_map.keys()], help = 'Please select the overall moods or feelings evoked by your advertisement.'
     )
 
 if len(moods) > 3:
