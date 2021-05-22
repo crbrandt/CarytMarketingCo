@@ -213,7 +213,7 @@ industry = st.selectbox(
           'Sports Leagues',
           'Virtual Assistants',
           'Other'
-      )
+      ), help = 'TEST'
       )
 
 
