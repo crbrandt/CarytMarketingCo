@@ -229,7 +229,7 @@ if len(moods) > 3:
 
 ##Multiselect for celebrity types. When celebrities are selected, their specific count values will be editable using sliders.
 celebs = st.multiselect(
-    'Select Types of Celebrities in Your Advertisement',
+    'Select Types of Celebrities',
     [x for x in celeb_map.keys()], help = 'Please select the type(s) of celebrities which will be included in your advertisement.'
     )
 
