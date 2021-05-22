@@ -306,7 +306,7 @@ if len(moods) <= 3:
           - A common theme is the advertisement showcasing some sort of party theme.
           - Exciting or funny moods are the most likely.
           """
-      if cluster_info == 1:
+      elif cluster_info == 1:
         best_ad_title = 'Budweiser - Lost Dog'
         worst_ad_title = 'Donald Trump - Criminal Justice Reform'
         best_ad_link = 'https://www.youtube.com/watch?v=TPKgC8KPBMg'
@@ -320,7 +320,7 @@ if len(moods) <= 3:
           - Athletes in general are commonly found as actors here along with politicians and other famous personnel.
           - The moods vary with the biggest two being funny and exciting, but the variety stretching from light hearted to patriotic to emotional.
           """
-      if cluster_info == 2:
+      elif cluster_info == 2:
         best_ad_title = 'M&M\'S - Bad Passengers'
         worst_ad_title = 'Burger King - Eat like Andy'
         best_ad_link = 'https://www.youtube.com/watch?v=w7FIka-jYM8'
@@ -334,7 +334,7 @@ if len(moods) <= 3:
           - This cluster was far more likely to contain some sort of comedian either in the story or as an actor.
           - Funny and exciting were the predominant moods.
           """
-      if cluster_info == 3:
+      elif cluster_info == 3:
         best_ad_title = 'Kia Niro - Hero\'s Journey'
         worst_ad_title = 'Lexus LS 500 F SPORT - Blank Panther'
         best_ad_link = 'https://www.youtube.com/watch?v=pVxmT2x3Od4'
@@ -348,7 +348,7 @@ if len(moods) <= 3:
           - These advertisements involved the most actors on a number basis (i.e on set and on screen).
           - Dramatic and adventurous were the most common moods.
           """
-      if cluster_info == 4:
+      elif cluster_info == 4:
         best_ad_title = 'Netflix - Our Planet'
         worst_ad_title = 'Quibi - Bank Heist'
         best_ad_link = 'https://www.youtube.com/watch?v=BSLzGgFbHZE'
@@ -362,7 +362,7 @@ if len(moods) <= 3:
           - Only category with wrestlers involved in either the story or as actors.
           - Funny or inspirational moods are the most likely.
           """
-      if cluster_info == 5:
+      elif cluster_info == 5:
         best_ad_title = 'Bud Light - Special Delivery'
         worst_ad_title = 'Michelob Ultra - Breathe'
         best_ad_link = 'https://www.youtube.com/watch?v=JZC3K6qk4wY'
