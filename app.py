@@ -164,7 +164,7 @@ celeb_map = {
     'Models':'n_models',
     'Musicians':'n_musician',
     'NFL Players':'n_nfl',
-    'Politicians':'n_politicians',
+    'Politicians':'n_politician',
     'Reality TV Stars':'n_reality_tv_stars',
     'Sports Commentators':'n_sports_commentators',
     'Talk Show Hosts':'n_talk_show_hosts',
