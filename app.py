@@ -207,7 +207,7 @@ industry = st.selectbox(
         'Software and Technology',
         'Sports Leagues',
         'Virtual Assistants',
-        'Other'
+        'Other',
         ''
     ), index = 14
     )
