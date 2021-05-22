@@ -241,7 +241,7 @@ for celeb in celebs:
     
 
 ##Predictions for score and cluster
-if len(moods) <= 3:
+if len(moods) <= 3 and len(industry) <= 1:
     button = st.button('Predict')
     
     #Setting initial cluster text values
