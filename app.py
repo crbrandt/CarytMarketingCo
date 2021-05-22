@@ -11,9 +11,9 @@ st.set_page_config(page_title='Caryt Marketing Co. Super Bowl Advertisement Anal
                    page_icon='https://i.ibb.co/ry0gwGD/caryt-logo-secondary.png',
                    layout="wide")
 
-div[data-baseweb="select"] > div {
-    background-color: '#575757';
-}
+# div[data-baseweb="select"] > div {
+#     background-color: '#575757';
+# }
 
 ##Creating Text format options with orange colors
 def highlight(text):
@@ -195,49 +195,27 @@ st.write("#")
 
 
 #Selectbox for Industry
-industry = 'Choose an option'
+industry = st.selectbox(
+      'Select an Industry',
+      (
+          'Choose an option',
+          'Beer',
+          'Cars',
+          'Cellular, Internet, and TV Providers',
+          'Restaurants and Fast Food',
+          'Games',
+          'Loans',
+          'Music, Movies, and Entertainment',
+          'Online Streaming Services',
+          'Snacks',
+          'Soft Drinks',
+          'Software and Technology',
+          'Sports Leagues',
+          'Virtual Assistants',
+          'Other'
+      )
+      )
 
-if industry == 'Choose an option':
-    industry = st.selectbox(
-            'Select an Industry',
-            (
-                'Choose an option',
-                'Beer',
-                'Cars',
-                'Cellular, Internet, and TV Providers',
-                'Restaurants and Fast Food',
-                'Games',
-                'Loans',
-                'Music, Movies, and Entertainment',
-                'Online Streaming Services',
-                'Snacks',
-                'Soft Drinks',
-                'Software and Technology',
-                'Sports Leagues',
-                'Virtual Assistants',
-                'Other'
-            )
-            )
-else:
-  industry = st.selectbox(
-        'Select an Industry',
-        (
-            'Beer',
-            'Cars',
-            'Cellular, Internet, and TV Providers',
-            'Restaurants and Fast Food',
-            'Games',
-            'Loans',
-            'Music, Movies, and Entertainment',
-            'Online Streaming Services',
-            'Snacks',
-            'Soft Drinks',
-            'Software and Technology',
-            'Sports Leagues',
-            'Virtual Assistants',
-            'Other'
-        )
-        )
 
 ##Selectbox for mood (note: if more than three moods are selected, users will not be able to continue)
 moods = st.multiselect(
