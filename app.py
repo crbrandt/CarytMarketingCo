@@ -198,7 +198,7 @@ if industry == 'Choose an option':
     industry = st.selectbox(
             'Select an Industry',
             (
-                'Choose an Option'
+                'Choose an Option',
                 'Beer',
                 'Cars',
                 'Cellular, Internet, and TV Providers',
