@@ -329,7 +329,7 @@ if len(moods) <= 3 and len(industry) <= 1:
         # Hypothetical rank in 2021
         pred_rank = preds_2021.index(pred)+1
         highlight(('Your Predicted Ad Score is {}'.format(result) + ' out of 100'))
-        highlight('This would have ranked #{} out of 57 in 2021 Ads'.format(pred_rank))
+        highlight('This would have ranked #{} out of 57 for 2021 Ads'.format(pred_rank))
         #
         #
         #
