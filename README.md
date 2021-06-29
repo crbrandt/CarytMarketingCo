@@ -7,4 +7,4 @@ Company and project developed by Cole Brandt, Anton Averin, Ranaa Ansari, Young 
 For questions, please contact: Cole Brandt, cole.r.brandt@gmail.com
 
 
-Web application was developed by Cole Brandt using Python and CSS, linked here: bit.ly/CarytMarketingCompany
+Web application was developed by Cole Brandt using Python and CSS, linked here: [CarytMarketingCompany](bit.ly/CarytMarketingCompany)
